@@ -8,7 +8,7 @@ import datetime
 
 urllib3.disable_warnings()
 
-bigip_host = "you hostname or IP"
+bigip_host = "hostname or IP"
 username = "admin"
 hiddenpassword = "SomePassword"
 policyName = ""
@@ -65,5 +65,5 @@ for policy in policyData['items']:
         pcEventType = auditItem['eventType']
         pcTimeStamp = policy['lastUpdateMicros']
 
-        print("\nPolicy change info (" + pcEventType + "): " + "\nChange Detail:" + pcDescription + "\nOn: " + str(datetime.datetime.fromtimestamp(pcTimeStamp/1000.0)))
+        print("\nPolicy change info (" + pcEventType + "): " + "\nChange Detail:" + pcDescription + "\nOn: " + str(datetime.datetime.fromtimestamp(pcTimeStamp/1000000.0)))
 
