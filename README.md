@@ -8,7 +8,7 @@ Then it iterates thru the results and shows the signatures and their Blocking st
 This has no real error handling - like if the password is not right or if the policy list is empty...
 
 
-##Added a couple new files:
+## Added a couple new files:
 
 policychangedetails.py - Outputs the last change of the selected policy
 policyauditdetails.py - Pulls the audit log for the selected policy/policies
